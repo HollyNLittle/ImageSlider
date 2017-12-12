@@ -1,0 +1,64 @@
+﻿body {
+	margin-top: 10vh;
+	background-color: #333;
+	color: #fff;
+}
+
+h1 {
+	text-align: center;
+	color: aliceblue;
+    margin-bottom:3vh;
+}
+
+a {
+	color: #f4f4f4;
+	text-decoration: none;
+	font-size: larger;
+}
+
+.container {
+	width: 75vw;
+	padding:20px;
+	margin: 40px;
+	overflow: auto;
+	border: 1px solid #f4f4f4;
+}
+
+.slider-inner {
+	width: 70vw;
+	height: 60vh;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	padding: 3px;
+	border: #666 solid 1px;
+}
+	/*hide image*/
+	.slider-inner img {
+		width: 70vw;
+		height: 60vh;
+		display: none;
+	}
+		/*show only the active image*/
+		.slider-inner img.active {
+			display: inline-block;
+		}
+/*show only tha active image/change mouse to pointer when hovers*/
+.prev, .next {
+	float: left;
+	margin-top: 130px;
+	cursor: pointer;
+}
+/************ARROW PLACEMENT NOT WORKING!!!!!!!!!*****************/
+/*z-index the higher will show so always will be on top*/
+.prev {
+	position: relative;
+	margin: -35px;
+	z-index: 100;
+}
+
+.next {
+	position: relative;
+	margin-left: -35px;
+	z-index: 100;
+}
